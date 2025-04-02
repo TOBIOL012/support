@@ -134,5 +134,13 @@ body::-webkit-scrollbar {
   display: none;             /* Safari und Chrome */
 }
 
+.datenschutz-text{
+  width: 90vw;
+  margin: 0 auto;
+  margin-top:2rem;
+  color: rgb(239, 244, 246);
+
+}
+
 
   
