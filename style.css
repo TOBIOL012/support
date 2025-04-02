@@ -1,56 +1,71 @@
 * {
   box-sizing: border-box;
 }
+
 body {
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f8fafc;
+  color: #2f2f2f;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #f5f5f5;
-  padding: 1rem;
+  background-color: #e6f0f9;
+  padding: 1.5rem;
   text-align: center;
+  font-size: 1.5rem;
   font-weight: bold;
+  color: #1a3b5d;
 }
 
 .container {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  max-width: 800px;
+  margin: 2rem auto;
   padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .top-section {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
   margin-bottom: 2rem;
-  gap: 1rem;
 }
 
 .top-section img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 
 .top-section h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  color: #1a3b5d;
 }
 
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.contact-section a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
 }
 
 footer {
-  background-color: #f5f5f5;
+  background-color: #e6f0f9;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
+  color: #555;
 }
   
