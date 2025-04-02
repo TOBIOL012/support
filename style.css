@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+
+    
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui, sans-serif;
+  font-family: "Dosis", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8fafc;
+  background-color: #151e30;
   color: #2f2f2f;
   display: flex;
   flex-direction: column;
@@ -16,20 +21,25 @@ body {
 }
 
 header {
-  background-color: #e6f0f9;
+  align-items: center;
+  display: flex;
+  background-color: #151e30;
   padding: 1.5rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: clamp(0rem, 2.3rem, 8vw);
   font-weight: bold;
-  color: #1a3b5d;
+  color: #b0c0d2;
+  gap: 1.5rem;
 }
 
 .container {
+  min-width: 50vw;
+  max-width: 90vw;
   flex: 1;
-  max-width: 800px;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  margin-top: 0;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: #a2abbf;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
@@ -41,9 +51,11 @@ header {
   margin-bottom: 2rem;
 }
 
-.top-section img {
-  width: 70px;
-  height: 70px;
+header img {
+  border-radius: 1rem;
+  width: clamp(0rem, 7rem, 20vw);
+  height: clamp(0rem, 7rem, 20vw);
+  box-shadow: 0px 10px 10px #080c13;
 }
 
 .top-section h1 {
@@ -62,10 +74,65 @@ header {
 }
 
 footer {
-  background-color: #e6f0f9;
+  background-color: #080c13;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  color: #555;
+  color: #6d81a3;
 }
+
+.message-section {
+  margin-top: 2rem;
+}
+
+.message-section h2 {
+  color: #1a3b5d;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input, textarea {
+  padding: 0.7rem;
+  color: white;
+  border: 3px solid #465565;
+  border-radius: 1rem;
+  background-color: #bdc7dd;
+}
+
+button {
+  background-color: #366bba;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
+  font-family: "Dosis", sans-serif;
+  box-shadow: 0px 6px 0px 0px #2a549c;
+}
+
+button:hover {
+  background-color: #254b99;
+}
+
+.small{
+  font-size: 0.9rem;
+  color: #2e2f30;
+}
+
+html, body {
+  -ms-overflow-style: none;  /* IE und Edge */
+  scrollbar-width: none;     /* Firefox */
+  overflow: auto;            /* Scrollbar bleibt funktional */
+}
+
+body::-webkit-scrollbar {
+  display: none;             /* Safari und Chrome */
+}
+
+
   
